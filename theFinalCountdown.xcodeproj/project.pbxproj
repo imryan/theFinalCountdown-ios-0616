@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		00EE91AC746D227FCDD736C4 /* libPods-theFinalCountdownTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CFA8838E49B049A55034506 /* libPods-theFinalCountdownTests.a */; };
-		4D55493F1BCC3BB9001E3D77 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D55493E1BCC3BB9001E3D77 /* Launch Screen.storyboard */; settings = {ASSET_TAGS = (); }; };
+		4D55493F1BCC3BB9001E3D77 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D55493E1BCC3BB9001E3D77 /* Launch Screen.storyboard */; };
+		9413E6351D23179500CB8139 /* FISTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9413E6341D23179500CB8139 /* FISTimer.m */; };
 		D81E9F24196D666A00FFD46B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D81E9F23196D666A00FFD46B /* Foundation.framework */; };
 		D81E9F26196D666A00FFD46B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D81E9F25196D666A00FFD46B /* CoreGraphics.framework */; };
 		D81E9F28196D666A00FFD46B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D81E9F27196D666A00FFD46B /* UIKit.framework */; };
@@ -22,7 +23,6 @@
 		D81E9F44196D666A00FFD46B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D81E9F23196D666A00FFD46B /* Foundation.framework */; };
 		D81E9F45196D666A00FFD46B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D81E9F27196D666A00FFD46B /* UIKit.framework */; };
 		D81E9F4D196D666A00FFD46B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D81E9F4B196D666A00FFD46B /* InfoPlist.strings */; };
-		D81E9F4F196D666A00FFD46B /* theFinalCountdownTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D81E9F4E196D666A00FFD46B /* theFinalCountdownTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +40,8 @@
 		4D55493E1BCC3BB9001E3D77 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		58510964D8C42C15BF6C15A3 /* Pods-theFinalCountdownTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-theFinalCountdownTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-theFinalCountdownTests/Pods-theFinalCountdownTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6CFA8838E49B049A55034506 /* libPods-theFinalCountdownTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-theFinalCountdownTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9413E6331D23179500CB8139 /* FISTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISTimer.h; sourceTree = "<group>"; };
+		9413E6341D23179500CB8139 /* FISTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISTimer.m; sourceTree = "<group>"; };
 		D81E9F20196D666A00FFD46B /* theFinalCountdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = theFinalCountdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D81E9F23196D666A00FFD46B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D81E9F25196D666A00FFD46B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -58,7 +60,6 @@
 		D81E9F42196D666A00FFD46B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D81E9F4A196D666A00FFD46B /* theFinalCountdownTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "theFinalCountdownTests-Info.plist"; sourceTree = "<group>"; };
 		D81E9F4C196D666A00FFD46B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D81E9F4E196D666A00FFD46B /* theFinalCountdownTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = theFinalCountdownTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +94,15 @@
 				33EBA375CDCE120115B189BF /* Pods-theFinalCountdownTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		9413E6321D23178800CB8139 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				9413E6331D23179500CB8139 /* FISTimer.h */,
+				9413E6341D23179500CB8139 /* FISTimer.m */,
+			);
+			name = Timer;
 			sourceTree = "<group>";
 		};
 		D81E9F17196D666A00FFD46B = {
@@ -132,6 +142,7 @@
 			children = (
 				D81E9F32196D666A00FFD46B /* FISAppDelegate.h */,
 				D81E9F33196D666A00FFD46B /* FISAppDelegate.m */,
+				9413E6321D23178800CB8139 /* Timer */,
 				D81E9F35196D666A00FFD46B /* Main.storyboard */,
 				D81E9F38196D666A00FFD46B /* FISViewController.h */,
 				D81E9F39196D666A00FFD46B /* FISViewController.m */,
@@ -156,7 +167,6 @@
 		D81E9F48196D666A00FFD46B /* theFinalCountdownTests */ = {
 			isa = PBXGroup;
 			children = (
-				D81E9F4E196D666A00FFD46B /* theFinalCountdownTests.m */,
 				D81E9F49196D666A00FFD46B /* Supporting Files */,
 			);
 			path = theFinalCountdownTests;
@@ -305,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9413E6351D23179500CB8139 /* FISTimer.m in Sources */,
 				D81E9F3A196D666A00FFD46B /* FISViewController.m in Sources */,
 				D81E9F30196D666A00FFD46B /* main.m in Sources */,
 				D81E9F34196D666A00FFD46B /* FISAppDelegate.m in Sources */,
@@ -315,7 +326,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D81E9F4F196D666A00FFD46B /* theFinalCountdownTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,8 +6,10 @@
 //  Copyright (c) 2014 Joe Burgess. All rights reserved.
 //
 
+@class FISTimer;
+
 #import <UIKit/UIKit.h>
 
-@interface FISViewController : UIViewController
+@interface FISViewController : UIViewController <FISTimerDelegate>
 
 @end
