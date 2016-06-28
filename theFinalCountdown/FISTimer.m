@@ -106,7 +106,7 @@
 }
 
 - (NSString *)formattedTime {
-    return [NSString stringWithFormat:@"%lu:%lu:%lu", self.hours, self.minutes, self.seconds];
+    return [NSString stringWithFormat:@"%02lu:%02lu:%02lu", self.hours, self.minutes, self.seconds];
 }
 
 @end
